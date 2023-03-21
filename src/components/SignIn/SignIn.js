@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import {FaRegEnvelope} from 'react-icons/fa';
-import {MdLockOutline} from 'react-icons/md';
+import { FaRegEnvelope} from 'react-icons/fa';
+import { MdLockOutline } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";

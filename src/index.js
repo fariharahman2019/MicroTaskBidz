@@ -5,6 +5,7 @@ import './index.css';
 // import App from './App';
 import SignUp from './components/SignUp/SignUp';
 import SignIn from './components/SignIn/SignIn';
+import ResetPassword from './components/ResetPassword/ResetPassword';
 import store from './store/store';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
@@ -19,6 +20,7 @@ root.render(
 
           <Route path="/SignIn" element={<SignIn />} />
           <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/ForgotPassword" element={<ResetPassword />} />
 
     {/* <React.StrictMode>
       <App />
