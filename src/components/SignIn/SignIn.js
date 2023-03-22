@@ -14,7 +14,7 @@ function SignIn(){
       const users = useSelector(selectUser);
       const navigate = useNavigate();
 
-      function signin(e) {
+      function handleSubmit(e) {
         e.preventDefault();
         if (user.email === "" && user.password === "") {
           alert("Please enter your Email & Password");
@@ -34,7 +34,7 @@ function SignIn(){
 
     return(
         <div className="flex flex-col items-center min-h-screen py-2 bg-zinc-800">
-            <form onSubmit={signin} className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+            <form onSubmit={handleSubmit} className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
                 <div className="bg-cyan-800 rounded-2xl shadow-2xl flex w-full max-w-3xl">
                     <div className="w-full p-5 py-10">
                         <h2 className="font-serif text-3xl font-bold text-white mb-2">Welcome Back to MicroTaskBidz</h2>
@@ -42,12 +42,12 @@ function SignIn(){
                         <div className='flex flex-col items-center'>
                             <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
                                 <FaRegEnvelope className='text-gray-400 mr-2'/>
-                                <input onChange={handleChange} value={user.email} type="email" name="email" placeholder="Email" className='bg-gray-100 outline-none text-sm'></input>
+                                <input onChange={handleChange} value={user.email} required type="email" name="email" placeholder="Email" className='bg-gray-100 outline-none text-sm'></input>
                             </div>
 
                             <div className="bg-gray-100 w-64 p-2 flex items-center">
                                 <MdLockOutline className='text-gray-400 mr-2'/>
-                                <input  onChange={handleChange} value={user.password} type="password" name="password" placeholder="Password" className='bg-gray-100 outline-none text-sm'></input>
+                                <input  onChange={handleChange} value={user.password} required type="password" name="password" placeholder="Password" className='bg-gray-100 outline-none text-sm'></input>
                             </div>
 
                             <div className='flex w-64 justify-between mb-5 mt-1 pt-2'>
