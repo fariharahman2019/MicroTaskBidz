@@ -30,7 +30,7 @@ function SignUp(){
       alert("Email id / Password not in format");
     }
   }
-
+// slice
   function validateEmailAndPassword(props) {
     const email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     const password = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
