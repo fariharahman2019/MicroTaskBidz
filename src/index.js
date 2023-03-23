@@ -5,6 +5,7 @@ import './index.css';
 // import App from './App';
 import SignUp from './components/SignUp/SignUp';
 import SignIn from './components/SignIn/SignIn';
+import Header from './Header/Header';
 import ResetPassword from './components/ResetPassword/ResetPassword';
 import store from './store/store';
 import reportWebVitals from './reportWebVitals';
@@ -18,6 +19,7 @@ root.render(
     <BrowserRouter>
       <Routes>
 
+          <Route path="/" element={<Header />} />
           <Route path="/SignIn" element={<SignIn />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/ForgotPassword" element={<ResetPassword />} />
