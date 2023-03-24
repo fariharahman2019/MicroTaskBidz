@@ -9,6 +9,7 @@ import ResetPassword from './components/ResetPassword/ResetPassword';
 import store from './store/store';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
+import Footer from './footer/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +22,7 @@ root.render(
           <Route path="/SignIn" element={<SignIn />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/ForgotPassword" element={<ResetPassword />} />
-
+          <Route path="/footer" element={<Footer />} />
     {/* <React.StrictMode>
       <App />
     </React.StrictMode> */}
