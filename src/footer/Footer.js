@@ -5,7 +5,7 @@ import { Icons } from "./Items";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white text-center">
+    <footer className="bg-gray-900 text-white text-center" id="#footer">
       <div className="md:flex md:items-center text-center h-20 sm:px-12 px-20 bg-[#ffffff19] py-7">
         <h1 className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal text-center font-semibold w-full" >
           <span className="text-teal-400 "> Feel Free</span> to give us FEEDBACK

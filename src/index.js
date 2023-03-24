@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import './index.css';
-// import App from './App';
-import SignUp from './components/SignUp/SignUp';
-import SignIn from './components/SignIn/SignIn';
-import Header from './Header/Header';
-import ResetPassword from './components/ResetPassword/ResetPassword';
+import App from './App';
 import store from './store/store';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
-import Footer from './footer/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,18 +13,10 @@ root.render(
 
   <Provider store={store}>
     <BrowserRouter>
-      <Routes>
 
-          <Route path="/" element={<Header />} />
-          <Route path="/SignIn" element={<SignIn />} />
-          <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/ForgotPassword" element={<ResetPassword />} />
-          <Route path="/footer" element={<Footer />} />
-    {/* <React.StrictMode>
+    <React.StrictMode>
       <App />
-    </React.StrictMode> */}
-
-      </Routes>
+    </React.StrictMode>
 
     </BrowserRouter>
 

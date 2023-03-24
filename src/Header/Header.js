@@ -3,6 +3,7 @@ import Button from "./Button";
 import logo from '../images/Logo.png';
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
 
@@ -12,7 +13,7 @@ const Header = () => {
         {name:"PORTFOLIO",link:"/"},
         {name:"CLIENTS",link:"/"},
         {name:"ARTICLES",link:"/"},
-        {name:"CONTACT US",link:"/"},
+        {name:"CONTACT US",link:"#footer"},
       ];
   
     const [open,setOpen] = useState(false);
@@ -34,7 +35,7 @@ const Header = () => {
             {
             Links.map((link)=>(
                 <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                <a href={link.link} className='text-yellow-400 hover:text-gray-400 duration-500'>{link.name}</a>
+                <a as={HashLink} href={link.link} className='text-yellow-400 hover:text-gray-400 duration-500'>{link.name}</a>
                 </li>
             ))
             }
