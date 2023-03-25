@@ -39,7 +39,7 @@ const Header = () => {
                 </li>
             ))
             }
-            <Button> <Link to="/SignIn"> Join Us</Link> </Button>
+            <Button> <Link to="/SignUp"> Join Us</Link> </Button>
             </ul>
 
         </div>

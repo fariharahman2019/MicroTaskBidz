@@ -19,7 +19,7 @@ const About = () => {
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
           <p className='text-start font-bold text-2xl px-2 pt-4'>New Tasks Everyday !!</p>
           <p className='text-start px-2'>Added Daily</p>
-          <button className='border bg-white rounded w-1/4 h-8 mx-auto text-black text-md  absolute bottom-2 right-2 '>ADD TASKS</button>
+          <button className='border bg-white rounded w-1/4 h-8 mx-auto text-black text-md  absolute bottom-2 right-2 '><Link to="/SignIn">ADD TASKS</Link></button>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -30,7 +30,7 @@ const About = () => {
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
           <p className='text-start font-bold text-2xl px-2 pt-4'>We Offer Home Service</p>
           <p className='text-start px-2'>24/7</p>
-          <button className='border bg-white rounded w-1/4 h-8 mx-auto text-black text-md  absolute bottom-2 right-2 '>BID NOW</button>
+          <button className='border bg-white rounded w-1/4 h-8 mx-auto text-black text-md  absolute bottom-2 right-2 '><Link to="/SignIn">BID NOW</Link></button>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'

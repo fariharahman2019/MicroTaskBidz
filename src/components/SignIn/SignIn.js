@@ -52,7 +52,7 @@ function SignIn(){
 
                             <div className='flex w-64 justify-between mb-5 mt-1 pt-2'>
                                 <label className='flex-items-center text-xs text-white'><input type="checkbox" name="remember" className="mr-1"/>Remember me</label>
-                                <p href="#" className="text-xs text-white">Forgot Password?</p>
+                                <p href="#" className="text-xs text-white"><Link to="/forgotPassword"> Forgot Password? </Link></p>
                             </div>  
 
                             <div>
