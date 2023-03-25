@@ -1,6 +1,6 @@
 
 export const Address1 = [
-  { name: "Spring Rain" },
+  { name: "Spring Rain"  },
   { name: "123/45. There are many variations of passages", link: "#" },
   { name: "12 Jumpton Road, South Avenue. New Jersey, NA.", link: "#" },
   { name: "Ph. (123) 456 789", link: "#" },

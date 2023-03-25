@@ -5,6 +5,8 @@ import { MdDriveFileRenameOutline } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { signin } from "../../features/userSlice";
+import Header from "../../Header/Header";
+import Footer from "../../Footer/Footer";
 
 function SignUp(){
 
@@ -48,7 +50,9 @@ function SignUp(){
   }
 
   return(
-    <div className="flex flex-col items-center min-h-screen py-2 bg-zinc-800">
+    <>
+    <Header></Header>
+    <div className="flex flex-col items-center min-h-screen py-2">
       <form onSubmit={checkEmailAndPassword} className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <div className="bg-cyan-800 rounded-2xl shadow-2xl flex w-full max-w-3xl">
           <div className="w-full p-5">
@@ -91,6 +95,8 @@ function SignUp(){
           </div>            
         </form>
       </div>
+      <Footer></Footer>
+      </>
     )
 }
 

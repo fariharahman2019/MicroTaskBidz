@@ -6,9 +6,9 @@ const About = () => {
     <div className='max-w-[1640px] p-4 py-12 grid md:grid-cols-3 gap-6 mx-10 px-10 mt-5' id='about'>
       <div className='rounded-xl relative'>
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-          <p className='text-start font-bold text-2xl px-2 pt-4'>Are You A Contractor?</p>
-          <p className=' text-start px-2'>Do some TASKS</p>
-          <button className='border bg-white rounded w-1/4 h-8 mx-auto text-black text-md  absolute bottom-2 right-2 '><Link to="/">VISIT US</Link></button>
+          <p className='text-start font-bold lg:text-2xl text-md  px-2 pt-4'>Are You A Contractor?</p>
+          <p className=' text-start px-2 text-sm'>Do some TASKS</p>
+          <button className='border bg-white rounded w-1/3 lg:h-12 h-8 mx-auto text-black text-sm lg:text-md  absolute bottom-2 right-2 '><Link to="/">VISIT US</Link></button>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -17,9 +17,9 @@ const About = () => {
       </div>
       <div className='rounded-xl relative'>
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-          <p className='text-start font-bold text-2xl px-2 pt-4'>New Tasks Everyday !!</p>
-          <p className='text-start px-2'>Added Daily</p>
-          <button className='border bg-white rounded w-1/4 h-8 mx-auto text-black text-md  absolute bottom-2 right-2 '><Link to="/SignIn">ADD TASKS</Link></button>
+          <p className='text-start font-bold lg:text-2xl text-md  px-2 pt-4'>New Tasks Everyday !!</p>
+          <p className='text-start px-2 text-sm'>Added Daily</p>
+          <button className='border bg-white rounded w-1/3 lg:h-12 h-8 mx-auto text-black text-sm lg:text-md  absolute bottom-2 right-2 '><Link to="/SignIn">ADD TASKS</Link></button>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -28,9 +28,9 @@ const About = () => {
       </div>
       <div className='rounded-xl relative'>
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-          <p className='text-start font-bold text-2xl px-2 pt-4'>We Offer Home Service</p>
-          <p className='text-start px-2'>24/7</p>
-          <button className='border bg-white rounded w-1/4 h-8 mx-auto text-black text-md  absolute bottom-2 right-2 '><Link to="/SignIn">BID NOW</Link></button>
+          <p className='text-start font-bold lg:text-2xl text-md  px-2 pt-4'>We Offer Home Service</p>
+          <p className='text-start px-2 text-sm'>24/7</p>
+          <button className='border bg-white rounded w-1/3 lg:h-12 h-8 mx-auto text-black text-sm lg:text-md  absolute bottom-2 right-2 '><Link to="/SignIn">BID NOW</Link></button>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'

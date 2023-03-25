@@ -4,6 +4,8 @@ import { MdLockOutline } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";
+import Header from "../../Header/Header";
+import Footer from "../../Footer/Footer";
 
 function SignIn(){
 
@@ -33,7 +35,9 @@ function SignIn(){
 
 
     return(
-        <div className="flex flex-col items-center min-h-screen py-2 bg-zinc-800">
+        <>
+        <Header></Header>
+        <div className="flex flex-col items-center min-h-screen py-2">
             <form onSubmit={handleSubmit} className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
                 <div className="bg-cyan-800 rounded-2xl shadow-2xl flex w-full max-w-3xl">
                     <div className="w-full p-5 py-10">
@@ -68,6 +72,8 @@ function SignIn(){
                 </div>            
             </form>
         </div>
+        <Footer></Footer>
+        </>
     )
 }
 
