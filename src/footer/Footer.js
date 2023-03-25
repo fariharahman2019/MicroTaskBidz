@@ -2,6 +2,7 @@ import React from "react";
 import AddressContainer from "./AddressContainer";
 import SocialIcons from "./SocialIcons";
 import { Icons } from "./Items";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
             <br></br>
         <textarea type="text" placeholder="Your Feedback" className="text-gray-800 sm:w-72 h-15 w-full sm:mr-5 mr-1 lg:mb-5 mb-4 py-2.5 rounded px-2 focus:outline-none"/>
             <br></br>
-        <button className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins] rounded-md text-white md:w-auto w-full" > Submit </button>
+        <button className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins] rounded-md text-white md:w-auto w-full" > <Link to="/home#about"> Submit </Link> </button>
       </div>
 
 

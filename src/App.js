@@ -3,11 +3,7 @@ import { Routes, Route} from 'react-router-dom';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import Home from './components/home/Home';
-// import Header from './Header/Header';
 import ResetPassword from './components/ResetPassword/ResetPassword';
-// import Footer from './Footer/Footer';
-
-
 
 
 function App() {
