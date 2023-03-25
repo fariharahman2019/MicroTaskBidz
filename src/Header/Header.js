@@ -9,11 +9,11 @@ const Header = () => {
 
     let Links =[
         {name:"HOME",link:"/"},
-        {name:"ABOUT",link:"/#about"},
-        {name:"PORTFOLIO",link:"/#portfolio"},
-        {name:"CLIENTS",link:"/#clients"},
+        {name:"ABOUT",link:"/home#about"},
+        {name:"PORTFOLIO",link:"/home#portfolio"},
+        {name:"CLIENTS",link:"/home#clients"},
         {name:"ARTICLES",link:"/"},
-        {name:"CONTACT US",link:"#footer"},
+        {name:"CONTACT US",link:"/home#footer"},
       ];
   
     const [open,setOpen] = useState(false);
@@ -21,11 +21,11 @@ const Header = () => {
 
   return (
 
-    <div className='shadow-md w-full fixed top-0 left-0 mb-11'>
+    <div className='shadow-md w-full top-0 left-0'>
       <div className='md:flex items-center justify-between bg-cyan-800 py-4 md:px-10 px-7'>
         <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
         text-gray-800'>
-            <img src={logo} alt=""></img>
+            <Link to="/"><img src={logo} alt=""></img></Link>
         </div>
       
         <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-4 cursor-pointer md:hidden'>
